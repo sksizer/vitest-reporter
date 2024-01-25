@@ -1,0 +1,31 @@
+{
+  "name": "vitest-reporter",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "A simple extension of default vitest reporter, to capture errors and send them to system for OS for OS level messages",
+  "main": "dist/index.js",
+  "scripts": {
+    "type-check": "tsc --watch",
+    "format-check": "npx prettier . --check",
+    "format": "npx prettier . --write",
+    "test-dist": "rm -Rf dist && rm -Rf node_modules && node ./scripts/postinstall.js",
+    "build": "tsc",
+    "test": "pnpm vitest",
+    "postinstall": "node ./scripts/postinstall.js"
+  },
+  "keywords": [],
+  "author": "Kelly Sizer",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.6",
+    "jsdom": "^23.2.0",
+    "prettier": "^3.2.4",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vitest": "^1.2.1"
+  },
+  "dependencies": {
+    "jest-util": "^29.7.0"
+  }
+}
