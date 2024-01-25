@@ -1,7 +1,7 @@
 {
   "name": "@sksizer/vitest-reporter",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple extension of default vitest reporter, to capture errors and send them to system for OS for OS level messages",
   "main": "dist/index.js",
   "scripts": {
@@ -26,6 +26,7 @@
     "vitest": "^1.2.1"
   },
   "dependencies": {
-    "jest-util": "^29.7.0"
+    "jest-util": "^29.7.0",
+    "vitest": "^1.2.1"
   }
 }
