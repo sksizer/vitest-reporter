@@ -1,7 +1,7 @@
 {
   "name": "@sksizer/vitest-reporter",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple extension of default vitest reporter, to capture errors and send them to system for OS for OS level messages",
   "main": "dist/index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   "author": "Kelly Sizer",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.11.6",
+    "@types/node": "^20.11.11",
     "jsdom": "^23.2.0",
     "prettier": "^3.2.4",
     "tsconfig-paths": "^4.2.0",
@@ -27,6 +27,6 @@
   },
   "dependencies": {
     "jest-util": "^29.7.0",
-    "vitest": "^1.2.1"
+    "vitest": "^1.2.2"
   }
 }

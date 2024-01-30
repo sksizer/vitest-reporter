@@ -15,7 +15,6 @@ type MyError = {
 
 function sendSystemMessage(title: string, subtitle: string, message: string, url: string, icon: string, senderID: string, sound: string = 'default') {
   let command = `terminal-notifier -group ${PROJECT} -title "${title}"  -subtitle "${subtitle}" -message "${message}" -open "${url}" -appIcon "${icon}" -contentImage "${icon}" -sound ${sound}`
-  console.log(command)
   exec(command)
 }
 
